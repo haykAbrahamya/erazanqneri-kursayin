@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@keyframes square {
+  0%    {top: 0; left: 0}
+  25%   {top: 0; left: calc(100% - 50px);}
+  50%   {top: calc(100% - 50px); left: calc(100% - 50px);}
+  75%   {top: calc(100% - 50px); left: 0px;}
+  100%  {top: 0px; left: 0px;}
+}
+
+.welcome-block {
+  position: relative;
+  animation-name: square;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: reverse;
+}
